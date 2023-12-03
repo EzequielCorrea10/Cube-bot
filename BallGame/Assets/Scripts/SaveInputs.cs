@@ -21,18 +21,18 @@ public class SaveInputs : MonoBehaviour
     {
         list = GameObject.Find("ListOfmovements");
         func = GameObject.Find("Function");
-
+        Inputs.Clear();
+        InputsFunc.Clear();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         movements();
-        
     }
 
     void movements()
     {
-        if(list.GetComponent<Image>().color == new Color(1, (float)0.93, (float)0, 1) && Inputs.Count<10)
+        if(list.GetComponent<Image>().color == new Color(1, (float)0.93, (float)0, 1) && Inputs.Count< 10)
         {
             if (Buttons.movPlayer == 1)
             {
@@ -58,11 +58,11 @@ public class SaveInputs : MonoBehaviour
             {
                 Inputs.Add(Buttons.movPlayer);
                 Buttons.movPlayer = 0;
-
             }
         }
         else if (func.GetComponent<Image>().color == new Color(1, (float)0.93, 0, 1))
         {
+            if(InputsFunc.Count < 4) { 
             if (Buttons.movPlayer == 1)
             {
                 InputsFunc.Add(Buttons.movPlayer);
@@ -83,8 +83,12 @@ public class SaveInputs : MonoBehaviour
                 InputsFunc.Add(Buttons.movPlayer);
                 Buttons.movPlayer = 0;
             }
+            }
+            else
+            {
+                Buttons.movPlayer = 0;
+            }
         }
-
     }
 
    public void resetMov()

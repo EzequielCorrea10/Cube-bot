@@ -93,7 +93,6 @@ public class Player : MonoBehaviour
                     AudioManager.pressButton = false;
                     yield return new WaitForSeconds(0.5f);
                 }
-
                 else if (SaveInputs.Inputs[i] == 4)
                 {
                     //saveLastPos
@@ -198,6 +197,7 @@ public class Player : MonoBehaviour
             pos.Clear();
             Rotation.Clear();
             SaveInputs.Inputs.Clear();
+            SaveInputs.InputsFunc.Clear();
             StopAllCoroutines();
             turnOver = true;
             GameManager.GetComponent<GameManager>().endTurn(turnOver); //si pierde reinicio el turno

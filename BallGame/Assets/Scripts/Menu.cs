@@ -32,7 +32,7 @@ public class Menu : MonoBehaviour
         var anima = GameObject.Find("Transition");
         var anim = anima.GetComponent<Animator>();
         anim.SetTrigger("Start");
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(0.9f);
         int currentScene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentScene + 1);
     }
@@ -42,7 +42,7 @@ public class Menu : MonoBehaviour
         var anima = GameObject.Find("Transition");
         var anim = anima.GetComponent<Animator>();
         anim.SetTrigger("Start");
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(0.9f);
         SceneManager.LoadScene("Tutorial");
     }
 
@@ -67,7 +67,7 @@ public class Menu : MonoBehaviour
         var anima = GameObject.Find("Transition");
         var anim = anima.GetComponent<Animator>();
         anim.SetTrigger("Start");
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(0.9f);
         SceneManager.LoadScene("Level0");
     }
     public void QuitGame()
