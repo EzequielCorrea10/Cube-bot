@@ -10,7 +10,7 @@ public class Menu : MonoBehaviour
 
     private void Awake()
     {
-        if(SceneManager.GetActiveScene().name == "Level0")
+        if(SceneManager.GetActiveScene().buildIndex == 0)
         {
             SaveInputs.Inputs.Clear();
             SaveInputs.InputsFunc.Clear();
@@ -68,7 +68,7 @@ public class Menu : MonoBehaviour
         var anim = anima.GetComponent<Animator>();
         anim.SetTrigger("Start");
         yield return new WaitForSeconds(0.9f);
-        SceneManager.LoadScene("Level0");
+        SceneManager.LoadScene(0);
     }
     public void QuitGame()
     {
