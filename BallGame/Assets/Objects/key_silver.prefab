@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 1902157731219324727}
   - component: {fileID: 4033771121500762247}
   - component: {fileID: 3635383155672147829}
+  - component: {fileID: 2773745662745115898}
   m_Layer: 0
   m_Name: key_silver
   m_TagString: Untagged
@@ -109,7 +110,7 @@ Transform:
   m_GameObject: {fileID: 155280}
   m_LocalRotation: {x: 0, y: -0.56557554, z: 0, w: 0.82469654}
   m_LocalPosition: {x: 14.7, y: 0.27977, z: 83.4}
-  m_LocalScale: {x: 1.8018788, y: 1.8018793, z: 1.8018793}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children:
   - {fileID: 413480}
   m_Father: {fileID: 0}
@@ -127,6 +128,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb3e4c9619c993b419fd01f85fbf45e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  yellow: {fileID: 0}
+  keyTocuhed: 0
 --- !u!65 &4033771121500762247
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -156,3 +159,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 3
+--- !u!111 &2773745662745115898
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155280}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0

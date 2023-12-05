@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class KeyManager : MonoBehaviour
@@ -9,6 +7,7 @@ public class KeyManager : MonoBehaviour
     bool isYellow;
     private float tiempoAcumulado = 0f;
      float intervalo = 0.5f;
+    public static bool keyTocuhed = false;
 
     private void Awake()
     {
@@ -18,14 +17,31 @@ public class KeyManager : MonoBehaviour
             isYellow = false;
     }
 
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            Material metal = gameObject.GetComponent<Renderer>().material;
-            var player = GameObject.FindGameObjectWithTag("Player");
-            Renderer keyMaterial = player.GetComponent<Renderer>();
-            keyMaterial.sharedMaterial = metal;
+            //Material metal = gameObject.GetComponent<Renderer>().material;
+            //var player = GameObject.FindGameObjectWithTag("Player");
+            //Renderer keyMaterial = player.GetComponent<Renderer>();
+            //keyMaterial.sharedMaterial = metal;
+            keyTocuhed = true;
+            GameObject.Find("Lock").SetActive(false);
+        }
+    }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            //Material metal = gameObject.GetComponent<Renderer>().material;
+            //var player = GameObject.FindGameObjectWithTag("Player");
+            //Renderer keyMaterial = player.GetComponent<Renderer>();
+            //keyMaterial.sharedMaterial = metal;
+            keyTocuhed = true;
+            GameObject.Find("Lock").SetActive(false);
+            this.gameObject.SetActive(false);
         }
     }
 

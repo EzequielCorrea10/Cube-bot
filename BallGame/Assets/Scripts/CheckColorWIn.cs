@@ -7,6 +7,12 @@ public class CheckColorWIn : MonoBehaviour
     public static bool keyWin;
     GameObject sceneManager;
     GameObject WinVariant;
+    GameObject Lock;
+
+    private void Awake()
+    {
+        Lock = GameObject.Find("Lock");
+    }
 
     private void OnEnable()
     {
@@ -25,7 +31,7 @@ public class CheckColorWIn : MonoBehaviour
             var player = GameObject.FindGameObjectWithTag("Player");
             Renderer keyMaterial = player.GetComponent<Renderer>();
 
-            if (color.color == keyMaterial.material.color && WinVariant != null)
+            if (KeyManager.keyTocuhed && Lock!=null)
             {
                 keyWin = true;
                 sceneManager.GetComponent<sceneLoader>().CheckWin(keyWin);

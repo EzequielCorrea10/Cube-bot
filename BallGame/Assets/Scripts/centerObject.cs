@@ -48,7 +48,7 @@ public class centerObject : MonoBehaviour
                 gameObject.transform.position = new Vector3(gameObject.transform.position.x + 0.5f, gameObject.transform.position.y + 1.5f, 0);
                 break;
             case "Level14":
-                gameObject.transform.position = new Vector3(gameObject.transform.position.x +1, gameObject.transform.position.y + 1.5f, 0);
+                gameObject.transform.position = new Vector3(gameObject.transform.position.x +1.5f, gameObject.transform.position.y + 1.5f, 0);
                 break;
             case "Level15":
                 gameObject.transform.position = new Vector3(gameObject.transform.position.x +1.5f, gameObject.transform.position.y , 0);
