@@ -39,9 +39,7 @@ public class Player : MonoBehaviour
                 button.SetActive(false);
             }
             var cross = GameObject.Find("Cross");
-            var crossF = GameObject.Find("CrossFunction");
             cross.SetActive(false);
-            crossF.SetActive(false);
             play.SetActive(false);
             var movs = GameObject.Find("ListOfMovs").GetComponentsInChildren<Image>();
 
@@ -191,7 +189,6 @@ public class Player : MonoBehaviour
             Play.play = false;
             play.SetActive(true);
             cross.SetActive(true);
-            crossF.SetActive(true);
             foreach (var button in buttons)
             {
                 button.SetActive(true);
