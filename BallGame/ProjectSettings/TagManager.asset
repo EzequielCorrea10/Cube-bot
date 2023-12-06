@@ -23,6 +23,7 @@ TagManager:
   - Menu
   - LevelSelector
   - anim
+  - Tutorial
   layers:
   - Default
   - TransparentFX

@@ -24,7 +24,7 @@ public class centerObject : MonoBehaviour
                 gameObject.transform.position = new Vector3(gameObject.transform.position.x + 2, gameObject.transform.position.y + 2, 0);
                 break;
             case "Level5":
-                gameObject.transform.position = new Vector3(gameObject.transform.position.x - 1f, gameObject.transform.position.y , 0);
+                gameObject.transform.position = new Vector3(gameObject.transform.position.x - 1f, gameObject.transform.position.y -2 , 0);
                 break;
             case "Level6":
                 gameObject.transform.position = new Vector3(gameObject.transform.position.x + 1.5f, gameObject.transform.position.y + 1.5f, 0);
@@ -42,7 +42,7 @@ public class centerObject : MonoBehaviour
                 gameObject.transform.position = new Vector3(gameObject.transform.position.x + 1.5f, gameObject.transform.position.y + 1.5f, 0);
                 break;
             case "Level12":
-                gameObject.transform.position = new Vector3(gameObject.transform.position.x + 2.5f, gameObject.transform.position.y + 1f, 0);
+                gameObject.transform.position = new Vector3(gameObject.transform.position.x + 3f, gameObject.transform.position.y + 1f, 0);
                 break;
             case "Level13":
                 gameObject.transform.position = new Vector3(gameObject.transform.position.x + 0.5f, gameObject.transform.position.y + 1.5f, 0);
@@ -51,10 +51,7 @@ public class centerObject : MonoBehaviour
                 gameObject.transform.position = new Vector3(gameObject.transform.position.x +1.5f, gameObject.transform.position.y + 1.5f, 0);
                 break;
             case "Level15":
-                gameObject.transform.position = new Vector3(gameObject.transform.position.x +1.5f, gameObject.transform.position.y , 0);
-                break;
-            case "Tutorial2":
-                gameObject.transform.position = new Vector3(gameObject.transform.position.x - 1f, gameObject.transform.position.y, 0);
+                gameObject.transform.position = new Vector3(gameObject.transform.position.x +1.3f, gameObject.transform.position.y , 0);
                 break;
             default:
                 break;
