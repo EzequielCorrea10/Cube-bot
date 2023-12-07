@@ -1880,6 +1880,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2970811307265186433, guid: 12f4d57d7fd046e42bfb7b5b5bfa414e,
         type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -159.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2970811307265186433, guid: 12f4d57d7fd046e42bfb7b5b5bfa414e,
+        type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -3.3000488
       objectReference: {fileID: 0}
@@ -2207,7 +2212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wireColor: {r: 1, g: 1, b: 1, a: 1}
-  UnitsSize: 21
+  UnitsSize: 25
   constraint: 1
   camera: {fileID: 1201463673}
 --- !u!81 &1201463672
@@ -2245,7 +2250,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10.5
+  orthographic size: 12.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

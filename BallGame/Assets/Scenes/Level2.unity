@@ -700,7 +700,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wireColor: {r: 1, g: 1, b: 1, a: 1}
-  UnitsSize: 15
+  UnitsSize: 18
   constraint: 1
   camera: {fileID: 401351055}
 --- !u!81 &401351054
@@ -738,7 +738,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.5
+  orthographic size: 9
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2013,6 +2013,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 57709648515416180, guid: 45ff1dc7ed1993a4f8f8c90a1a5eb88f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -3.9101562
+      objectReference: {fileID: 0}
+    - target: {fileID: 8091905424339045847, guid: 45ff1dc7ed1993a4f8f8c90a1a5eb88f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8890301732267947678, guid: 45ff1dc7ed1993a4f8f8c90a1a5eb88f,
         type: 3}
       propertyPath: m_Pivot.x
