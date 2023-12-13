@@ -85,12 +85,12 @@ public class sceneLoader : MonoBehaviour
         {
             uiNoFunc.SetActive(false);
         }
-        win.text = "YOU WIN";
+        win.text = "Level complete";
         fail.text = "";
         var anima = GameObject.Find("Transition");
         var anim = anima.GetComponent<Animator>();
         anim.SetTrigger("Start");
-        yield return new WaitForSeconds(1.1f);
+        yield return new WaitForSeconds(0.8f);
         int currentScene = SceneManager.GetActiveScene().buildIndex;
         if(currentScene != 15)
         {
@@ -118,12 +118,12 @@ public class sceneLoader : MonoBehaviour
             uiNoFunc.SetActive(false);
         }
         win.text = "";
-        fail.text = "YOU FAIL";
+        fail.text = "Try again";
 
         var anima = GameObject.Find("Transition");
         var anim = anima.GetComponent<Animator>();
         anim.SetTrigger("Start");
-        yield return new WaitForSeconds(0.9f);
+        yield return new WaitForSeconds(0.8f);
         int currentScene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentScene);
         Player.lastnum.Clear();

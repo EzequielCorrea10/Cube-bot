@@ -46,13 +46,13 @@ public class KeepAnim : MonoBehaviour
         }
         else if (sceneLoader.winAnim)
         {
-            win.text = "YOU WIN";
+            win.text = "Level complete";
             fail.text = "";
             sceneLoader.winAnim = false;
         }
         else if (sceneLoader.failAnim)
         {
-            fail.text = "YOU FAIL";
+            fail.text = "Try again";
             win.text = "";
             sceneLoader.failAnim = false;
         }

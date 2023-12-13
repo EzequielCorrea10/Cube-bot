@@ -3223,6 +3223,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LevelSelectorObj: {fileID: 0}
   MenuObj: {fileID: 0}
+  win: {fileID: 0}
+  fail: {fileID: 0}
 --- !u!1 &6753291788827474181
 GameObject:
   m_ObjectHideFlags: 0
