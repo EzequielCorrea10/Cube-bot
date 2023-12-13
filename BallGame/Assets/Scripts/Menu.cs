@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
     public GameObject LevelSelectorObj;
     public GameObject MenuObj;
-
+    public Text win;
+    public Text fail;
     private void Awake()
     {
         if(SceneManager.GetActiveScene().buildIndex == 0)
@@ -15,6 +17,20 @@ public class Menu : MonoBehaviour
             SaveInputs.Inputs.Clear();
             SaveInputs.InputsFunc.Clear();
             GameObject.Find("Anim").SetActive(false);
+        }
+        else { 
+        var textos = GameObject.Find("Transition").GetComponentsInChildren<Text>();
+        foreach (var texto in textos)
+        {
+            if (texto.name == "Win")
+            {
+                win = texto;
+            }
+            else
+            {
+                fail = texto;
+            }
+        }
         }
     }
     public void Play()
@@ -29,6 +45,10 @@ public class Menu : MonoBehaviour
 
     IEnumerator animaion()
     {
+        if(fail != null && win != null) { 
+        fail.text = "";
+        win.text = "";
+        }
         var anima = GameObject.Find("Transition");
         var anim = anima.GetComponent<Animator>();
         anim.SetTrigger("Start");
@@ -64,6 +84,11 @@ public class Menu : MonoBehaviour
 
     IEnumerator animaionMenu()
     {
+        if (fail != null && win != null)
+        {
+            fail.text = "";
+            win.text = "";
+        }
         var anima = GameObject.Find("Transition");
         var anim = anima.GetComponent<Animator>();
         anim.SetTrigger("Start");
