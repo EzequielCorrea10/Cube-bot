@@ -1257,7 +1257,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!4 &759709003 stripped
 Transform:
@@ -2247,6 +2247,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Anim: {fileID: 915474081}
   Music: {fileID: 73171042}
+  win: {fileID: 0}
+  fail: {fileID: 0}
 --- !u!4 &1697448381
 Transform:
   m_ObjectHideFlags: 0

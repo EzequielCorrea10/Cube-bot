@@ -1363,6 +1363,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Anim: {fileID: 1619557485}
   Music: {fileID: 601063660}
+  win: {fileID: 0}
+  fail: {fileID: 0}
 --- !u!4 &518566277
 Transform:
   m_ObjectHideFlags: 0
@@ -3183,7 +3185,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!1 &1619557485
 GameObject:

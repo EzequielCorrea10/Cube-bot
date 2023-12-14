@@ -2195,7 +2195,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!1 &1511427257
 GameObject:
@@ -3524,6 +3524,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Anim: {fileID: 310703295}
   Music: {fileID: 1105073871}
+  win: {fileID: 0}
+  fail: {fileID: 0}
 --- !u!4 &2073421203
 Transform:
   m_ObjectHideFlags: 0

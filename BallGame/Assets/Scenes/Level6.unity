@@ -1143,7 +1143,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!1001 &700496650
 PrefabInstance:
@@ -3171,6 +3171,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Anim: {fileID: 1829718454}
   Music: {fileID: 1349774481}
+  win: {fileID: 0}
+  fail: {fileID: 0}
 --- !u!4 &1780216586
 Transform:
   m_ObjectHideFlags: 0
