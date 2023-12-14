@@ -8,6 +8,7 @@ public class Menu : MonoBehaviour
 {
     public GameObject LevelSelectorObj;
     public GameObject MenuObj;
+    public GameObject credits;
     public Text win;
     public Text fail;
     private void Awake()
@@ -16,7 +17,11 @@ public class Menu : MonoBehaviour
         {
             SaveInputs.Inputs.Clear();
             SaveInputs.InputsFunc.Clear();
-            GameObject.Find("Anim").SetActive(false);
+            var anim = GameObject.Find("Anim");
+            if(anim != null)
+            {
+                anim.SetActive(false);
+            }
         }
         else { 
         var textos = GameObject.Find("Transition").GetComponentsInChildren<Text>();
@@ -81,6 +86,10 @@ public class Menu : MonoBehaviour
     {
         StartCoroutine(animaionMenu());
     }
+    public void Credits()
+    {
+        credits.SetActive(true);
+    }
 
     IEnumerator animaionMenu()
     {
@@ -98,5 +107,13 @@ public class Menu : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    private void Update()
+    {
+        if(credits.activeInHierarchy && Input.GetMouseButtonDown(0))
+        {
+            credits.SetActive(false);
+        }
     }
 }
